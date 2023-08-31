@@ -103,6 +103,7 @@ func svcRegisterBranch(transType string, branch *TransBranch, data map[string]st
 			now := time.Now()
 			updateBranchAsyncChan <- branchStatus{
 				gid:        branch.Gid,
+				binData:    branch.BinData,
 				branchID:   branch.BranchID,
 				op:         data["op"],
 				status:     data["status"],

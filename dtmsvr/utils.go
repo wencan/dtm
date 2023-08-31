@@ -19,6 +19,7 @@ import (
 
 type branchStatus struct {
 	gid        string
+	binData    []byte
 	branchID   string
 	op         string
 	status     string

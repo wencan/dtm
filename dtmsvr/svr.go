@@ -107,6 +107,7 @@ func updateBranchAsync() {
 					exists[k] = true
 					updates = append(updates, TransBranch{
 						Gid:        updateBranch.gid,
+						BinData:    updateBranch.binData,
 						BranchID:   updateBranch.branchID,
 						Op:         updateBranch.op,
 						Status:     updateBranch.status,
